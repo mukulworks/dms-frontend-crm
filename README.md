@@ -1,20 +1,22 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Changes made by me 
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Report -> Any Excel Report/Case Summary-> Date To Can not be lesser than date from. Please set validation in all the date filter.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+Case Details-> Query and Reply Text label-> User need to expand the text so that they can copy the query and reply text.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+Forward button not working in the footer. 
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+If we click any page number, control not showing highlighted on that page.	
+
+Outbound Cases-> Need to implement the mandatory check for all the questionnaires for all type of outbound cases.
+
+Inbound > Allocate Cases > Pages are opening in ODD number, (1,3,5).
+
+Outbound > Allocate Cases > Direct 2nd page opened and Next Pages are opening in even number, (2,4,6).	
+
+Not able to download all reports before Oct 2023, Dates are showing disable.	
+
+Inbound > Active Service Cases > Not able to updated Next action for Jan month	
+
+In Outbound > Pending Followups > Next Action Data showing disable after 3 months	
+
