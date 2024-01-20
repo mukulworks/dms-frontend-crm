@@ -1,0 +1,221 @@
+/* skoda Theme */
+
+.skoda .btn-success {
+    background-color: #42bd3b;
+    border-color: #42bd3b;
+}
+
+.skoda .btn-outline-success {
+    color: #42bd3b;
+    border-color: #42bd3b;
+}
+
+.skoda .btn-outline-success:hover {
+    background-color: #42bd3b;
+    border-color: #42bd3b;
+    color: #fff;
+}
+
+.skoda .menu-title .text-danger {
+    color: #42bd3b !important;
+}
+
+.skoda .fav {
+    color: #42bd3b;
+}
+
+.skoda .custom-radio-btn .custom-control-input:checked~.custom-control-label::before {
+    background-color: white;
+    border: 1px solid #42bd3b;
+}
+
+.skoda .custom-radio-btn .custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-color: #42bd3b;
+    background-image: none;
+}
+
+.skoda .custom-control-input:checked~.custom-control-label::before {
+    background-color: #42bd3b;
+}
+
+.skoda .custom-switch .custom-control-input:checked~.custom-control-label::after {
+    background-color: #42bd3b;
+    border: 1px solid #42bd3b;
+}
+
+.skoda .form-control::-webkit-input-placeholder {
+    /* Edge */
+    color: #ccc;
+}
+
+.skoda .form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ccc;
+}
+
+.skoda .form-control::placeholder {
+    color: #ccc;
+}
+
+
+/*
+.skoda select.form-control option[value=""][disabled],
+.skoda select.form-control option:required:invalid,
+.skoda select.form-control option:first-child,
+.skoda select.form-control option[disabled]:first-child {
+    color: #ccc;
+} */
+
+.skoda select.form-control {
+    text-transform: uppercase;
+}
+
+.skoda .brand-logo {
+    margin-top: -10px;
+    position: relative;
+    top: 5px;
+}
+
+.skoda .breadcrumb li,
+.skoda .breadcrumb li a,
+.skoda .breadcrumb-item.active {
+    color: black;
+    font-weight: 500;
+}
+
+.skoda .status {
+    color: #fff;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 55px;
+    display: inline-block;
+    text-align: center;
+}
+.status {
+    color: #fff;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 55px;
+    display: inline-block;
+    text-align: center;
+}
+
+.skoda .table-skoda th,
+.skoda .table-skoda td {
+    padding: 10px 15px;
+    font-size: 12px;
+}
+
+.skoda .table-skoda th {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.skoda .table-th {
+    display: inline-block;
+}
+
+
+.skoda .process-flow a.active .process-section span {
+    border: 2px solid #000;
+}
+
+.skoda .process-flow a .process-section span.pass {
+    border: 2px solid #42bd3b;
+}
+
+.skoda .process-flow a .process-section span.fail {
+    border: 2px solid red;
+}
+
+.skoda .process-flow a.active::after {
+    border: 1px solid #000;
+}
+
+.skoda .process-flow a.done::after,
+.skoda .process-flow a.done::before,
+.skoda .process-flow a.active::before {
+    border: 1px solid #000;
+}
+
+.skoda .sales-service-group .btn-light {
+    background-color: #e6e6e6;
+    border-color: #dadada;
+}
+
+.skoda .sales-service-group .btn-light:not(:disabled):not(.disabled).active {
+    background-color: #42bd3b;
+    border-color: #2cab25;
+    color: #fff;
+}
+
+.skoda .result-list span {
+    width: 90px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.skoda .result-list strong {
+    font-size: 11px;
+    /* width: 110px; */
+    width: calc(100% - 90px);
+    display: inline-block;
+}
+
+.skoda .result-tab {
+    margin: -9px -9px 0px -9px;
+}
+
+.skoda .result-tab ul li a {
+    border: 0;
+    padding: 6px 6px;
+    font-size: 14px;
+    color: #4d565c;
+    text-transform: uppercase;
+    background-color: #f8f8f8;
+}
+
+.skoda .result-tab ul li a.active {
+    color: #4d565c;
+    background-color: #ffffff;
+}
+
+.skoda .call-details .services .custom-radio-btn .form-check-inline,
+.skoda .call-details .presales .custom-radio-btn .form-check-inline {
+    margin-right: 9px;
+    margin-bottom: 10px;
+}
+
+.skoda .card-style .card {
+    border-radius: 0;
+    border: 0;
+    background-color: transparent;
+    color: #000;
+}
+
+.skoda .card-style .card .card-header {
+    border-radius: 0;
+    border: 1px solid #E5E5EC;
+    padding: 6px 10px;
+    position: relative;
+}
+
+.skoda .card-style .card .card-header .mdi-content-paste {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    color: #4D565C;
+}
+
+.skoda .card-style .card .card-header .mdi-content-paste:hover {
+    color: #000;
+}
+
+.skoda .card-style .card .card-body {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+/* skoda theme */

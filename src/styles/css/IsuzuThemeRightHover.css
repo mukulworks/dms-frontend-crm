@@ -1,0 +1,77 @@
+.Isuzu .right-hover {
+    top: 40%;
+}
+
+.Isuzu .right-hover li.Alloted-Dealer-Details.active .sub-content-wrapper {
+    width: 795px;
+}
+
+.Isuzu .right-hover li.custom-width-followup.active .sub-content-wrapper {
+    width: 850px;
+}
+
+.Isuzu .right-hover li.custom-width-followup.active .sub-content-wrapper .sub-content {
+    width: 680px;
+    padding-right: 60px;
+}
+
+.Isuzu .right-hover li.customer-info.active .sub-content-wrapper {
+    width: 875px !important;
+}
+
+.Isuzu .right-hover li.customer-info.active .sub-content-wrapper .sub-content {
+    width: 670px;
+}
+
+.Isuzu .right-hover li.customer-info .nav-tabs {
+    border: 0;
+}
+
+.Isuzu .right-hover li.customer-info .nav-tabs .nav-link {
+    margin-left: 0;
+    border: 0;
+}
+
+.Isuzu .right-hover li.Vehicle-Information.active .sub-content-wrapper {
+    width: 865px;
+}
+.Isuzu .right-hover li.Vehicle-Information.active .sub-content-wrapper .sub-content {
+    width: 680px;
+    overflow: auto;
+    height: 320px;
+}
+
+.Isuzu .right-hover li.Service-Plans.active .sub-content-wrapper {
+    width: 790px;
+}
+.Isuzu .right-hover li.active .text-success{
+    color: var(--skoda-color) !important;
+}
+.Isuzu .right-hover .sub-content-wrapper>a {
+    background-color: var(--isuzu-color);
+}
+
+.Isuzu .right-hover .sub-content {
+    width: 600px;
+}
+.Isuzu .right-hover li.Conversation.active .sub-content {
+    width: 550px!important;
+}
+.Isuzu .right-hover li.ContactInformation.active .sub-content-wrapper {
+    width: 875px!important;
+}
+.Isuzu .right-hover li.ContactInformation.active .sub-content-wrapper .sub-content{
+    width: 680px;
+}
+.Isuzu .right-hover li.JobCardDetails.active .sub-content-wrapper{
+    width: 770px;
+}
+.Isuzu .right-hover li.JobCardDetails.active .sub-content-wrapper .sub-content {
+    width: 580px;
+}
+.Isuzu .right-hover li.VehicleInfo.active .sub-content-wrapper{
+    width: 690px;
+}
+.Isuzu .right-hover li.VehicleInfo.active .sub-content-wrapper .sub-content {
+    width: 500px;
+}

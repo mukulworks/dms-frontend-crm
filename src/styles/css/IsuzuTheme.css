@@ -1,0 +1,244 @@
+:root {
+	--isuzu-color: #e83e33;
+	--skoda-color: #42bd3b;
+    --white-color: #ffffff;
+}
+.Isuzu :focus{
+    box-shadow: none;
+}
+.Isuzu .btn-success, .Isuzu .btn-success:hover, .Isuzu .btn-success:focus, .Isuzu .btn-success:active{
+    background-color: var(--isuzu-color) !important;
+    border-color: var(--isuzu-color) !important;
+}
+.Isuzu .btn-outline-success {
+    color: var(--isuzu-color);
+    border-color: var(--isuzu-color);
+}
+.Isuzu .btn-outline-success:hover, .Isuzu .btn-outline-success:focus, .Isuzu .btn-outline-success:active{
+    background-color: var(--isuzu-color) !important;
+    border-color: var(--isuzu-color) !important;
+    color: var(--white-color) !important;
+}
+.Isuzu .text-success {
+    color: var(--isuzu-color) !important;
+}
+
+.Isuzu .supNumber{
+ color: var(--isuzu-color);;   
+}
+
+/* Isuzu Theme */
+
+.Isuzu .btn-outline-success:hover {
+    background-color: var(--isuzu-color);
+    border-color: var(--isuzu-color);
+    color: #fff;
+}
+
+.Isuzu .menu-title .text-danger {
+    color: var(--isuzu-color) !important;
+}
+
+.Isuzu .fav {
+    color: var(--isuzu-color);
+}
+
+.Isuzu .custom-radio-btn .custom-control-input:checked~.custom-control-label::before {
+    background-color: white;
+    border: 1px solid var(--isuzu-color);
+}
+
+.Isuzu .custom-radio-btn .custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-color: var(--isuzu-color);
+    background-image: none;
+}
+
+.Isuzu .custom-control-input:checked~.custom-control-label::before {
+    background-color: var(--isuzu-color);
+}
+
+.Isuzu .custom-switch .custom-control-input:checked~.custom-control-label::after {
+    background-color: var(--isuzu-color);
+    border: 1px solid var(--isuzu-color);
+}
+
+.Isuzu .form-control::-webkit-input-placeholder {
+    /* Edge */
+    color: #ccc;
+}
+
+.Isuzu .form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ccc;
+}
+
+.Isuzu .form-control::placeholder {
+    color: #ccc;
+}
+
+
+/*
+.Isuzu select.form-control option[value=""][disabled],
+.Isuzu select.form-control option:required:invalid,
+.Isuzu select.form-control option:first-child,
+.Isuzu select.form-control option[disabled]:first-child {
+    color: #ccc;
+} */
+
+.Isuzu select.form-control {
+    text-transform: uppercase;
+}
+
+.Isuzu .brand-logo {
+    margin-top: -10px;
+    position: relative;
+    top: 5px;
+}
+
+.Isuzu .breadcrumb li,
+.Isuzu .breadcrumb li a,
+.Isuzu .breadcrumb-item.active {
+    color: black;
+    font-weight: 500;
+}
+
+.Isuzu .status {
+    color: #fff;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 55px;
+    display: inline-block;
+    text-align: center;
+}
+.status {
+    color: #fff;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 55px;
+    display: inline-block;
+    text-align: center;
+}
+
+.Isuzu .table-skoda th,
+.Isuzu .table-skoda td {
+    padding: 10px 15px;
+    font-size: 12px;
+}
+
+.Isuzu .table-skoda th {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.Isuzu .table-th {
+    display: inline-block;
+}
+
+
+.Isuzu .process-flow a.active .process-section span {
+    border: 2px solid #000;
+}
+
+.Isuzu .process-flow a .process-section span.pass {
+    border: 2px solid var(--isuzu-color);
+}
+
+.Isuzu .process-flow a .process-section span.fail {
+    border: 2px solid var(--isuzu-color);
+}
+
+.Isuzu .process-flow a.active::after {
+    border: 1px solid #000;
+}
+
+.Isuzu .process-flow a.done::after,
+.Isuzu .process-flow a.done::before,
+.Isuzu .process-flow a.active::before {
+    border: 1px solid #000;
+}
+
+.Isuzu .sales-service-group .btn-light {
+    background-color: #e6e6e6;
+    border-color: #dadada;
+}
+
+.Isuzu .sales-service-group .btn-light:not(:disabled):not(.disabled).active {
+    background-color: var(--isuzu-color);
+    border-color: var(--isuzu-color);
+    color: #fff;
+}
+
+.Isuzu .result-list span {
+    width: 90px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.Isuzu .result-list strong {
+    font-size: 11px;
+    /* width: 110px; */
+    width: calc(100% - 90px);
+    display: inline-block;
+}
+
+.Isuzu .result-tab {
+    margin: -9px -9px 0px -9px;
+}
+
+.Isuzu .result-tab ul li a {
+    border: 0;
+    padding: 6px 6px;
+    font-size: 14px;
+    color: #4d565c;
+    text-transform: uppercase;
+    background-color: #f8f8f8;
+}
+
+.Isuzu .result-tab ul li a.active {
+    color: #4d565c;
+    background-color: #ffffff;
+}
+
+.Isuzu .call-details .services .custom-radio-btn .form-check-inline,
+.Isuzu .call-details .presales .custom-radio-btn .form-check-inline {
+    margin-right: 9px;
+    margin-bottom: 10px;
+}
+
+.Isuzu .card-style .card {
+    border-radius: 0;
+    border: 0;
+    background-color: transparent;
+    color: #000;
+}
+
+.Isuzu .card-style .card .card-header {
+    border-radius: 0;
+    border: 1px solid #E5E5EC;
+    padding: 6px 10px;
+    position: relative;
+}
+
+.Isuzu .card-style .card .card-header .mdi-content-paste {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    color: #4D565C;
+}
+
+.Isuzu .card-style .card .card-header .mdi-content-paste:hover {
+    color: #000;
+}
+
+.Isuzu .card-style .card .card-body {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.Isuzu .alert-success {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+/* Isuzu theme */

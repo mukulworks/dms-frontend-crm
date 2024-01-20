@@ -1,0 +1,183 @@
+.right-hover {
+    position: fixed;
+    top: 41%;
+    right: -90px;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+.right-hover .sub-content-wrapper>a {
+    background-color: #dc3545;
+    color: #fff;
+    font-size: 20px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin: 1px 0;
+    padding-right: 3px;
+    padding-left: 8px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    line-height: normal;
+}
+
+.right-hover a .text-title {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+
+/* .right-hover:hover {	
+right: 0px;	
+} */
+
+.right-hover.right-0 {
+    right: 0;
+}
+
+.right-hover .nav-tabs {
+    background-color: #fff;
+    margin-left: 0px;
+    margin-right: 0px;
+    /* border-color: #F8F8F8; */
+}
+
+.right-hover .sub-content {
+    position: relative;
+    right: -30px;
+    background-color: #fff;
+    z-index: -1;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-bottom-left-radius: 20px;
+    width: 570px;
+    top: -5px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+}
+
+.right-hover .mostRecentService {
+    padding-right: 120px;
+}
+
+.right-hover .customerAddress {
+    padding-right: 25px;
+}
+
+.right-hover .customerFeedback {
+    padding-right: 12px;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.right-hover li {
+    position: relative;
+}
+.right-hover li.active .sub-content-wrapper {
+    position: absolute;
+    width: 900px;
+    right: 0;
+    z-index: 0;
+}
+
+.right-hover li.Conversation.active .sub-content-wrapper {
+    width: 755px;
+}
+.skoda .right-hover li.Conversation.active .sub-content {
+    width: 550px !important;
+}
+.right-hover .nav-tabs .nav-link.active,
+.right-hover .nav-tabs .nav-item.show .nav-link {
+    background-color: #f1f3f4;
+    border-color: #f1f3f4;
+    border-radius: 0;
+    font-weight: normal;
+}
+
+.right-hover .tab-content>.active {
+    background-color: #f1f3f4;
+}
+
+.right-hover .nav-tabs .nav-link {
+    color: #000;
+    font-weight: 600;
+}
+
+.right-hover .nav-tabs .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+
+.skoda .right-hover {
+    top: 40%;
+}
+
+.skoda .right-hover li.Alloted-Dealer-Details.active .sub-content-wrapper {
+    width: 795px;
+}
+
+.skoda .right-hover li.custom-width-followup.active .sub-content-wrapper {
+    width: 850px;
+}
+
+.skoda .right-hover li.custom-width-followup.active .sub-content-wrapper .sub-content {
+    width: 680px;
+    padding-right: 60px;
+}
+
+.skoda .right-hover li.customer-info.active .sub-content-wrapper {
+    width: 875px !important;
+}
+
+.skoda .right-hover li.customer-info.active .sub-content-wrapper .sub-content {
+    width: 670px;
+}
+
+.skoda .right-hover li.customer-info .nav-tabs {
+    border: 0;
+}
+
+.skoda .right-hover li.customer-info .nav-tabs .nav-link {
+    margin-left: 0;
+    border: 0;
+}
+
+.skoda .right-hover li.Vehicle-Information.active .sub-content-wrapper {
+    width: 875px;
+}
+
+.skoda .right-hover li.Vehicle-Information.active .sub-content-wrapper .sub-content{
+    width: 695px;
+    overflow: auto;
+    height: 320px;
+}
+
+.skoda .right-hover li.Service-Plans.active .sub-content-wrapper {
+    width: 790px;
+}
+.right-hover li.CustomerInformation.active .sub-content-wrapper{
+    width: 880px !important;
+}
+.right-hover li.CustomerInformation.active .sub-content-wrapper .sub-content {
+    width: 670px;
+}
+.skoda .right-hover .sub-content-wrapper>a {
+    background-color: #42bd3b;
+}
+
+.skoda .right-hover .sub-content {
+    width: 600px;
+}
+
+.skoda .right-hover li.JobCardDetails.active .sub-content-wrapper{
+    width: 770px;
+}
+.skoda .right-hover li.JobCardDetails.active .sub-content-wrapper .sub-content {
+    width: 580px;
+}
+.skoda .right-hover li.VehicleInfo.active .sub-content-wrapper{
+    width: 690px;
+}
+.skoda .right-hover li.VehicleInfo.active .sub-content-wrapper .sub-content {
+    width: 500px;
+}

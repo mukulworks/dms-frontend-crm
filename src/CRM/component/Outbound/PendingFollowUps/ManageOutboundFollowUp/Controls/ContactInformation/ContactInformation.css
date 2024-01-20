@@ -1,0 +1,34 @@
+.right-hover {
+    right: -165px !important;
+}
+.right-hover > ul > li:not(.active):hover {
+  margin-right: 160px;
+}
+.right-hover .sub-content-wrapper>a {
+    min-width: 200px;
+}
+.skoda .right-hover li.active.activityLog .sub-content-wrapper {
+    width: 800px;
+}
+.skoda .right-hover li.active.ContactInformation .sub-content-wrapper {
+    width: 875px !important;
+}
+.skoda .right-hover .ContactInformation .sub-content {
+    width: 680px !important;
+}
+
+.skoda .right-hover .ContactInformation .table td {
+  padding: 5px 5px;
+}
+.Isuzu .right-hover li.activityLog.active .sub-content-wrapper {
+    width: 780px;
+}
+.Isuzu .right-hover li.activityLog.active .sub-content-wrapper .sub-content {
+    width: 590px;
+}
+.Isuzu .right-hover li.custom-width-followup.active .sub-content-wrapper{
+    width: 780px;
+}
+.Isuzu .right-hover li.custom-width-followup.active .sub-content-wrapper .sub-content {
+    width: 590px;
+}
