@@ -65,9 +65,9 @@ const VechicalListPopUp = ({
                 </button>
                 <button
                   type="button"
-                  id="closebtn"
-                  className="btn "
+                  className="btn btn-outline-success "
                   onClick={() => setIsPopUpActive(!isPopUpActive)}
+                  style={{ marginLeft: "10px" }}
                 >
                   Close
                 </button>
