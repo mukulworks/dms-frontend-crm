@@ -17,6 +17,7 @@ import {
   fetchEngagedCasesSaga,
   fetchSalesActiveCasesSaga,
   fetchServiceActiveCasesSaga,
+  assignSelectedVinNumberSaga,
 } from "./inboundSaga";
 import {
   fetchOutboundCriteriaSaga,
@@ -57,6 +58,8 @@ export function* watchInbound() {
     types.SERVICE_CHECK_ACTIVE_CASES,
     fetchServiceActiveCasesSaga
   );
+  //edit  by mukul
+  yield takeLatest(types.SELECTED_VIN_NUMBER, assignSelectedVinNumberSaga);
 }
 
 export function* watchOutbound() {

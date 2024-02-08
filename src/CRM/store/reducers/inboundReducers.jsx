@@ -15,6 +15,7 @@ const initialState = {
     caseUniqueIds: [],
     salesLast30DayCase: {},
     serviceLast30DayCase: {},
+    selectedVinnumber: {}, //edit by mukul
   },
   control: {
     prospectControlPayload: { prospectMasterSerial: 0, isControlActive: false },
@@ -371,6 +372,34 @@ const inboundReducer = (state = initialState, action) => {
         inboundModel: {
           ...state.inboundModel,
           serviceLast30DayCase: action.error,
+        },
+      };
+
+    //edit by mukul
+    case types.SELECTED_VIN_NUMBER_SUCCESS:
+      return {
+        ...state,
+        inboundModel: {
+          ...state.inboundModel,
+          selectedVinnumber: action.payload,
+        },
+      };
+
+    case types.SELECTED_VIN_NUMBER_FAILURE:
+      return {
+        ...state,
+        inboundModel: {
+          ...state.inboundModel,
+          selectedVinnumber: action.error,
+        },
+      };
+
+    case types.RESET_SELECTED_VIN_NUMBER:
+      return {
+        ...state,
+        inboundModel: {
+          ...state.inboundModel,
+          selectedVinnumber: {},
         },
       };
 

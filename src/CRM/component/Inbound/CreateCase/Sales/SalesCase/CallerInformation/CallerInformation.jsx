@@ -15,7 +15,6 @@ const CallerInformation = ({
   searchValue,
   custTitles,
 }) => {
-  console.log(selectedRecord);
   const { register, errors } = useFormContext();
   const [cityList, setCityList] = useState([]);
   const [searchByValue, setSearchByValue] = useState("");

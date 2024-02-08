@@ -229,3 +229,18 @@ export function* fetchServiceActiveCasesSaga(payload) {
     yield put({ type: types.HIDE_CIRCULAR_LOADER });
   }
 }
+//edit by mukul
+export function* assignSelectedVinNumberSaga(payload) {
+  try {
+    yield put({ type: types.SHOW_CIRCULAR_LOADER });
+    // let response = yield call(checkActiveCase, payload.payload);
+    yield put({
+      type: types.SELECTED_VIN_NUMBER_SUCCESS,
+      payload: payload.payload,
+    });
+    yield put({ type: types.HIDE_CIRCULAR_LOADER });
+  } catch (error) {
+    yield put({ type: types.SELECTED_VIN_NUMBER_FAILURE, error });
+    yield put({ type: types.HIDE_CIRCULAR_LOADER });
+  }
+}

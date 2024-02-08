@@ -7,6 +7,7 @@ import * as constants from "../../../../../../utils/constant";
 import useWindowSize from "../../../../../../Hooks/useWindowSize";
 import NotificationPopup from "../../../../../../../src/components/Shared/NotificationPopUp/NotificationPopup";
 import PopUpImage from "../../../../../../images/already-modified.png";
+import VechicalListPopUp from "./VechicalListPopUp";
 
 const ServiceCase = ({
   isActive,
@@ -37,6 +38,7 @@ const ServiceCase = ({
     message,
     selectedJobCard,
     custTitles,
+    distinctVehicles, //edit by mukul
   } = useSelector((state) => {
     let serviceCaseResponseModel =
       state.inboundReducer.inboundModel.createNewCase.serviceCaseResponseModel;
@@ -62,6 +64,7 @@ const ServiceCase = ({
     let last30DayCase = state.inboundReducer.inboundModel.serviceLast30DayCase;
     let isCaseExists = last30DayCase.isCaseExists;
     let message = last30DayCase.message;
+    let distinctVehicles = last30DayCase.distinctVehicles; //edit by mukul
     let selectedRecord;
     let cities;
     let selectedState;
@@ -75,7 +78,7 @@ const ServiceCase = ({
       case constants.JOB_CARD_DETAILS:
         if (dmsCustomer !== undefined && dmsCustomer !== null) {
           if (dmsCustomer.custMasterSerial !== null) {
-            selectedRecord = dmsCustomer;
+            selectedRecord = dmsCustomer; //to be change
           }
         }
         if (states?.length > 0)
@@ -132,10 +135,16 @@ const ServiceCase = ({
       message: message,
       selectedJobCard: selectedJobCard,
       custTitles: custTitles,
+      distinctVehicles: distinctVehicles, //edit by mukul
     };
   });
 
   const [isPopUpActive, setIsPopUpActive] = useState(!isCaseExists);
+  const [data, setData] = useState("");
+
+  const handleDataChange = (newData) => {
+    setData(newData);
+  };
 
   return (
     <div
@@ -190,6 +199,14 @@ const ServiceCase = ({
           setIsPopUpActive={setIsPopUpActive}
           image={PopUpImage}
           message={message}
+        />
+      )}
+      {/* to be change */}
+      {distinctVehicles?.length > 1 && (
+        <VechicalListPopUp
+          isPopUpActive={isPopUpActive}
+          setIsPopUpActive={setIsPopUpActive}
+          distinctVehicles={distinctVehicles}
         />
       )}
     </div>

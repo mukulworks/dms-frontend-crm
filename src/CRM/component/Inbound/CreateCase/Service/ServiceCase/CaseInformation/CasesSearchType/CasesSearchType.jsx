@@ -1,9 +1,11 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import {
   checkServiceActiveCases,
   custHistoryByIdentification,
   fillCallerInformation,
+  selectedVinNumber,
+  resetSelectedVinNumber,
 } from "../../../../../../../store/actions/inboundActions";
 import * as constants from "../../../../../../../../utils/constant";
 
@@ -18,6 +20,7 @@ const CasesSearchType = ({ type }) => {
   });
   const [isValidated, setIsValidated] = useState(false);
   const [errorComment, setErrorComment] = useState("");
+  const [chasisno, setChasisno] = useState(false);
 
   const checkValidations = (name, value) => {
     switch (name) {
@@ -75,8 +78,9 @@ const CasesSearchType = ({ type }) => {
     }
 
     let data = {
-      name: name,
-      value: value,
+      name: JSON.stringify(selectedVinnumber) === "{}" ? name : "V",
+      value:
+        JSON.stringify(selectedVinnumber) === "{}" ? value : selectedVinnumber,
       departmentCode: departmentCode,
     };
     if (valid) {
@@ -88,6 +92,7 @@ const CasesSearchType = ({ type }) => {
           data: data,
         };
         dispatch(fillCallerInformation(payload));
+        // dispatch(resetSelectedVinNumber({}));
       }
     }
   };
@@ -96,10 +101,21 @@ const CasesSearchType = ({ type }) => {
   // if(code === 13) { //13 is the enter keycode
   //Do stuff in here
   // }
+  // const dispatche = useDispatch();
+
+  const selectedVinnumber = useSelector(
+    (state) => state.inboundReducer.inboundModel.selectedVinnumber
+  );
 
   const handleClick = (searchByType) => {
     setToggleSearchBy(searchByType);
   };
+  console.log("selectedVinnumber", selectedVinnumber);
+  useEffect(() => {
+    if (selectedVinnumber && Object.keys(selectedVinnumber).length !== 0) {
+      fetchCustHistoryDetails();
+    }
+  }, [selectedVinnumber]);
   return (
     <React.Fragment>
       <div className="form-group">

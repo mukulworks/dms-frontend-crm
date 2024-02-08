@@ -16,7 +16,6 @@ const CallerInformation = ({
   isTagROChecked,
   selectedJobCard,
 }) => {
-  console.log(selectedRecord, "selectedRecord");
   const { register, errors } = useFormContext();
   const [cityList, setCityList] = useState(cities);
 

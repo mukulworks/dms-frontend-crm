@@ -220,7 +220,6 @@ export const reassignCaseToDealer = (payload) => {
     });
 };
 export const escalationSagaService = (payload) => {
-  console.log(payload);
   return ApiCall.escalationSagaService(payload)
     .then((res) => {
       return res;
