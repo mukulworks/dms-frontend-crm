@@ -110,7 +110,6 @@ const CasesSearchType = ({ type }) => {
   const handleClick = (searchByType) => {
     setToggleSearchBy(searchByType);
   };
-  console.log("selectedVinnumber", selectedVinnumber);
   useEffect(() => {
     if (selectedVinnumber && Object.keys(selectedVinnumber).length !== 0) {
       fetchCustHistoryDetails();
